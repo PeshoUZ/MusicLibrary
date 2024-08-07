@@ -1,0 +1,12 @@
+C:\Users\user\Desktop\c#\MusicLibrary\src\Core\MusicLibrary.Domain\bin\Debug\net8.0\MusicLibrary.Domain.deps.json
+C:\Users\user\Desktop\c#\MusicLibrary\src\Core\MusicLibrary.Domain\bin\Debug\net8.0\MusicLibrary.Domain.dll
+C:\Users\user\Desktop\c#\MusicLibrary\src\Core\MusicLibrary.Domain\bin\Debug\net8.0\MusicLibrary.Domain.pdb
+C:\Users\user\Desktop\c#\MusicLibrary\src\Core\MusicLibrary.Domain\obj\Debug\net8.0\MusicLibrary.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\c#\MusicLibrary\src\Core\MusicLibrary.Domain\obj\Debug\net8.0\MusicLibrary.Domain.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\c#\MusicLibrary\src\Core\MusicLibrary.Domain\obj\Debug\net8.0\MusicLibrary.Domain.AssemblyInfo.cs
+C:\Users\user\Desktop\c#\MusicLibrary\src\Core\MusicLibrary.Domain\obj\Debug\net8.0\MusicLibrary.Domain.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\c#\MusicLibrary\src\Core\MusicLibrary.Domain\obj\Debug\net8.0\MusicLibrary.Domain.sourcelink.json
+C:\Users\user\Desktop\c#\MusicLibrary\src\Core\MusicLibrary.Domain\obj\Debug\net8.0\MusicLibrary.Domain.dll
+C:\Users\user\Desktop\c#\MusicLibrary\src\Core\MusicLibrary.Domain\obj\Debug\net8.0\refint\MusicLibrary.Domain.dll
+C:\Users\user\Desktop\c#\MusicLibrary\src\Core\MusicLibrary.Domain\obj\Debug\net8.0\MusicLibrary.Domain.pdb
+C:\Users\user\Desktop\c#\MusicLibrary\src\Core\MusicLibrary.Domain\obj\Debug\net8.0\ref\MusicLibrary.Domain.dll

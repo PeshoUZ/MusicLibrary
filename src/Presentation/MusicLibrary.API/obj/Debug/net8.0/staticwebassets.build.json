@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "9C8jIls4tLgvKH4zcER4bU3GRzFd1g+Ucxnhf7U7zWU=",
+  "Source": "MusicLibrary.API",
+  "BasePath": "_content/MusicLibrary.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

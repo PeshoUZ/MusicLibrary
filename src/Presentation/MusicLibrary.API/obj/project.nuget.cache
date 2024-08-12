@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "0lfztJ6K+mH6Wmzh6/bKSI5wykxbzMGaHzIlfFIjNWKAcoxkUwUJBXsqC9yaMEwG4Lqh7YSQrBel7VR0OLS39Q==",
+  "dgSpecHash": "bEF/YLyB5vYwGTfHU9RCw/Ya5USJ81RmABpzUeBqqJpplyHqw72/wXKmUAhKsPFsCPfU4cr5iSRTo3h3MzZkSw==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Presentation\\MusicLibrary.API\\MusicLibrary.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.1\\microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",

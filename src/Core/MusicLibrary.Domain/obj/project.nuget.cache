@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "OwxzS50Xt3gfv0j34na9FUqloGKOIprHgUPfmT6ffrLCh+Teeim5Fp00pSlszGbxTW9wNlO/nkjDZkRNcdo7aw==",
+  "dgSpecHash": "HQeJC9CVSF1KO7n/HdWE3bVu3ROS/o75gTHWVSZWIcEEY4bJ6Pdj28BUPzd/nWMcmbfrCRJKGzlKXsIvKl/d4A==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Core\\MusicLibrary.Domain\\MusicLibrary.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.1\\microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

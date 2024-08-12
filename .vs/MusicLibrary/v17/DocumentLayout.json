@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D7C2BB5E-F510-4D94-BBB8-99DBDC02CFE7}|src\\Core\\MusicLibrary.Application\\MusicLibrary.Application.csproj|c:\\users\\user\\desktop\\c#\\musiclibrary\\src\\core\\musiclibrary.application\\interfaces\\itrackartistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7C2BB5E-F510-4D94-BBB8-99DBDC02CFE7}|src\\Core\\MusicLibrary.Application\\MusicLibrary.Application.csproj|solutionrelative:src\\core\\musiclibrary.application\\interfaces\\itrackartistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7C2BB5E-F510-4D94-BBB8-99DBDC02CFE7}|src\\Core\\MusicLibrary.Application\\MusicLibrary.Application.csproj|C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\core\\musiclibrary.application\\interfaces\\iartistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7C2BB5E-F510-4D94-BBB8-99DBDC02CFE7}|src\\Core\\MusicLibrary.Application\\MusicLibrary.Application.csproj|solutionrelative:src\\core\\musiclibrary.application\\interfaces\\iartistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7C2BB5E-F510-4D94-BBB8-99DBDC02CFE7}|src\\Core\\MusicLibrary.Application\\MusicLibrary.Application.csproj|C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\core\\musiclibrary.application\\interfaces\\ialbumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7C2BB5E-F510-4D94-BBB8-99DBDC02CFE7}|src\\Core\\MusicLibrary.Application\\MusicLibrary.Application.csproj|solutionrelative:src\\core\\musiclibrary.application\\interfaces\\ialbumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7C2BB5E-F510-4D94-BBB8-99DBDC02CFE7}|src\\Core\\MusicLibrary.Application\\MusicLibrary.Application.csproj|C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\core\\musiclibrary.application\\interfaces\\itrackrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7C2BB5E-F510-4D94-BBB8-99DBDC02CFE7}|src\\Core\\MusicLibrary.Application\\MusicLibrary.Application.csproj|solutionrelative:src\\core\\musiclibrary.application\\interfaces\\itrackrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1F8F978-9AE9-4C58-9000-A8AB599BB3C8}|src\\Core\\MusicLibrary.Domain\\MusicLibrary.Domain.csproj|c:\\users\\user\\desktop\\c#\\musiclibrary\\src\\core\\musiclibrary.domain\\entities\\trackartist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1F8F978-9AE9-4C58-9000-A8AB599BB3C8}|src\\Core\\MusicLibrary.Domain\\MusicLibrary.Domain.csproj|solutionrelative:src\\core\\musiclibrary.domain\\entities\\trackartist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C1F8F978-9AE9-4C58-9000-A8AB599BB3C8}|src\\Core\\MusicLibrary.Domain\\MusicLibrary.Domain.csproj|C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\core\\musiclibrary.domain\\entities\\artist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C1F8F978-9AE9-4C58-9000-A8AB599BB3C8}|src\\Core\\MusicLibrary.Domain\\MusicLibrary.Domain.csproj|solutionrelative:src\\core\\musiclibrary.domain\\entities\\artist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,22 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C1F8F978-9AE9-4C58-9000-A8AB599BB3C8}|src\\Core\\MusicLibrary.Domain\\MusicLibrary.Domain.csproj|C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\core\\musiclibrary.domain\\entities\\track.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C1F8F978-9AE9-4C58-9000-A8AB599BB3C8}|src\\Core\\MusicLibrary.Domain\\MusicLibrary.Domain.csproj|solutionrelative:src\\core\\musiclibrary.domain\\entities\\track.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C1F8F978-9AE9-4C58-9000-A8AB599BB3C8}|src\\Core\\MusicLibrary.Domain\\MusicLibrary.Domain.csproj|C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\core\\musiclibrary.domain\\entities\\trackartist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1F8F978-9AE9-4C58-9000-A8AB599BB3C8}|src\\Core\\MusicLibrary.Domain\\MusicLibrary.Domain.csproj|solutionrelative:src\\core\\musiclibrary.domain\\entities\\trackartist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D7C2BB5E-F510-4D94-BBB8-99DBDC02CFE7}|src\\Core\\MusicLibrary.Application\\MusicLibrary.Application.csproj|c:\\users\\user\\desktop\\c#\\musiclibrary\\src\\core\\musiclibrary.application\\interfaces\\iartistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7C2BB5E-F510-4D94-BBB8-99DBDC02CFE7}|src\\Core\\MusicLibrary.Application\\MusicLibrary.Application.csproj|solutionrelative:src\\core\\musiclibrary.application\\interfaces\\iartistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D7C2BB5E-F510-4D94-BBB8-99DBDC02CFE7}|src\\Core\\MusicLibrary.Application\\MusicLibrary.Application.csproj|c:\\users\\user\\desktop\\c#\\musiclibrary\\src\\core\\musiclibrary.application\\interfaces\\ialbumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7C2BB5E-F510-4D94-BBB8-99DBDC02CFE7}|src\\Core\\MusicLibrary.Application\\MusicLibrary.Application.csproj|solutionrelative:src\\core\\musiclibrary.application\\interfaces\\ialbumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D7C2BB5E-F510-4D94-BBB8-99DBDC02CFE7}|src\\Core\\MusicLibrary.Application\\MusicLibrary.Application.csproj|c:\\users\\user\\desktop\\c#\\musiclibrary\\src\\core\\musiclibrary.application\\interfaces\\itrackrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7C2BB5E-F510-4D94-BBB8-99DBDC02CFE7}|src\\Core\\MusicLibrary.Application\\MusicLibrary.Application.csproj|solutionrelative:src\\core\\musiclibrary.application\\interfaces\\itrackrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,11 +42,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "ITrackArtistRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Core\\MusicLibrary.Application\\Interfaces\\ITrackArtistRepository.cs",
+              "RelativeDocumentMoniker": "src\\Core\\MusicLibrary.Application\\Interfaces\\ITrackArtistRepository.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Core\\MusicLibrary.Application\\Interfaces\\ITrackArtistRepository.cs",
+              "RelativeToolTip": "src\\Core\\MusicLibrary.Application\\Interfaces\\ITrackArtistRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T08:15:21.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ITrackRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Core\\MusicLibrary.Application\\Interfaces\\ITrackRepository.cs",
               "RelativeDocumentMoniker": "src\\Core\\MusicLibrary.Application\\Interfaces\\ITrackRepository.cs",
@@ -55,46 +72,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "IAlbumRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Core\\MusicLibrary.Application\\Interfaces\\IAlbumRepository.cs",
               "RelativeDocumentMoniker": "src\\Core\\MusicLibrary.Application\\Interfaces\\IAlbumRepository.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Core\\MusicLibrary.Application\\Interfaces\\IAlbumRepository.cs",
               "RelativeToolTip": "src\\Core\\MusicLibrary.Application\\Interfaces\\IAlbumRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAZAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-08T16:57:21.807Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "IArtistRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Core\\MusicLibrary.Application\\Interfaces\\IArtistRepository.cs",
               "RelativeDocumentMoniker": "src\\Core\\MusicLibrary.Application\\Interfaces\\IArtistRepository.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Core\\MusicLibrary.Application\\Interfaces\\IArtistRepository.cs",
               "RelativeToolTip": "src\\Core\\MusicLibrary.Application\\Interfaces\\IArtistRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAgAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-08T16:33:04.441Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "TrackArtist.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Core\\MusicLibrary.Domain\\Entities\\TrackArtist.cs",
               "RelativeDocumentMoniker": "src\\Core\\MusicLibrary.Domain\\Entities\\TrackArtist.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Core\\MusicLibrary.Domain\\Entities\\TrackArtist.cs",
               "RelativeToolTip": "src\\Core\\MusicLibrary.Domain\\Entities\\TrackArtist.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-08T16:20:58.933Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Track.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Core\\MusicLibrary.Domain\\Entities\\Track.cs",
               "RelativeDocumentMoniker": "src\\Core\\MusicLibrary.Domain\\Entities\\Track.cs",
@@ -102,12 +119,11 @@
               "RelativeToolTip": "src\\Core\\MusicLibrary.Domain\\Entities\\Track.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T16:18:30.765Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-08T16:18:30.765Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Album.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Core\\MusicLibrary.Domain\\Entities\\Album.cs",
               "RelativeDocumentMoniker": "src\\Core\\MusicLibrary.Domain\\Entities\\Album.cs",
@@ -115,12 +131,11 @@
               "RelativeToolTip": "src\\Core\\MusicLibrary.Domain\\Entities\\Album.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T16:14:07.974Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-08T16:14:07.974Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Artist.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Core\\MusicLibrary.Domain\\Entities\\Artist.cs",
               "RelativeDocumentMoniker": "src\\Core\\MusicLibrary.Domain\\Entities\\Artist.cs",
@@ -128,8 +143,7 @@
               "RelativeToolTip": "src\\Core\\MusicLibrary.Domain\\Entities\\Artist.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T16:10:41.84Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-08T16:10:41.84Z"
             }
           ]
         }

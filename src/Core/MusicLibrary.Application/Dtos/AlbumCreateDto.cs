@@ -8,9 +8,9 @@ namespace MusicLibrary.Application.Dtos
 {
     public class AlbumCreateDto
     {
-        public int AlbumId { get; set; }
+        //public int AlbumId { get; set; }
         public string? Title { get; set; }
         public DateOnly ReleaseDate { get; set; }
-        public int ArtistId { get; set; }
+        //public int ArtistId { get; set; }
     }
 }

@@ -22,7 +22,7 @@ namespace MusicLibrary.Application.Services
         {
             var artist = new Artist
             {
-                ArtistId = GenerateArtistId(),
+                //ArtistId = GenerateArtistId(),
                 FirstName = artistDto.FirstName,
                 LastName = artistDto.LastName,
                 Pseudonim = artistDto.Pseudonim,
@@ -39,7 +39,7 @@ namespace MusicLibrary.Application.Services
         {
             return _artistRepository.GetById(artistId);
         }
-
+         
         public IEnumerable<Artist> GetArtists()
         {
             return _artistRepository.GetAll();
@@ -50,6 +50,6 @@ namespace MusicLibrary.Application.Services
             _artistRepository.Update(artist);
         }
 
-        private int GenerateArtistId() => _artistRepository.GetAll().Count() + 1;
+        //private int GenerateArtistId() => _artistRepository.GetAll().Count() + 1;
     }
 }

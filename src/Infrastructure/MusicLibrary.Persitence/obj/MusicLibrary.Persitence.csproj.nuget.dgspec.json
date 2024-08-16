@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Infrastructure\\MusicLibrary.Persitence\\MusicLibrary.Persitence.csproj": {}
+    "C:\\Users\\user\\Desktop\\MusicLibrary\\src\\Infrastructure\\MusicLibrary.Persitence\\MusicLibrary.Persitence.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Core\\MusicLibrary.Application\\MusicLibrary.Application.csproj": {
+    "C:\\Users\\user\\Desktop\\MusicLibrary\\src\\Core\\MusicLibrary.Application\\MusicLibrary.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Core\\MusicLibrary.Application\\MusicLibrary.Application.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\MusicLibrary\\src\\Core\\MusicLibrary.Application\\MusicLibrary.Application.csproj",
         "projectName": "MusicLibrary.Application",
-        "projectPath": "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Core\\MusicLibrary.Application\\MusicLibrary.Application.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\MusicLibrary\\src\\Core\\MusicLibrary.Application\\MusicLibrary.Application.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Core\\MusicLibrary.Application\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\MusicLibrary\\src\\Core\\MusicLibrary.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Core\\MusicLibrary.Domain\\MusicLibrary.Domain.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Core\\MusicLibrary.Domain\\MusicLibrary.Domain.csproj"
+              "C:\\Users\\user\\Desktop\\MusicLibrary\\src\\Core\\MusicLibrary.Domain\\MusicLibrary.Domain.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\MusicLibrary\\src\\Core\\MusicLibrary.Domain\\MusicLibrary.Domain.csproj"
               }
             }
           }
@@ -82,14 +82,14 @@
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Core\\MusicLibrary.Domain\\MusicLibrary.Domain.csproj": {
+    "C:\\Users\\user\\Desktop\\MusicLibrary\\src\\Core\\MusicLibrary.Domain\\MusicLibrary.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Core\\MusicLibrary.Domain\\MusicLibrary.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\MusicLibrary\\src\\Core\\MusicLibrary.Domain\\MusicLibrary.Domain.csproj",
         "projectName": "MusicLibrary.Domain",
-        "projectPath": "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Core\\MusicLibrary.Domain\\MusicLibrary.Domain.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\MusicLibrary\\src\\Core\\MusicLibrary.Domain\\MusicLibrary.Domain.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Core\\MusicLibrary.Domain\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\MusicLibrary\\src\\Core\\MusicLibrary.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -156,14 +156,14 @@
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Infrastructure\\MusicLibrary.Persitence\\MusicLibrary.Persitence.csproj": {
+    "C:\\Users\\user\\Desktop\\MusicLibrary\\src\\Infrastructure\\MusicLibrary.Persitence\\MusicLibrary.Persitence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Infrastructure\\MusicLibrary.Persitence\\MusicLibrary.Persitence.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\MusicLibrary\\src\\Infrastructure\\MusicLibrary.Persitence\\MusicLibrary.Persitence.csproj",
         "projectName": "MusicLibrary.Persitence",
-        "projectPath": "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Infrastructure\\MusicLibrary.Persitence\\MusicLibrary.Persitence.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\MusicLibrary\\src\\Infrastructure\\MusicLibrary.Persitence\\MusicLibrary.Persitence.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Infrastructure\\MusicLibrary.Persitence\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\MusicLibrary\\src\\Infrastructure\\MusicLibrary.Persitence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -184,11 +184,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Core\\MusicLibrary.Application\\MusicLibrary.Application.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Core\\MusicLibrary.Application\\MusicLibrary.Application.csproj"
+              "C:\\Users\\user\\Desktop\\MusicLibrary\\src\\Core\\MusicLibrary.Application\\MusicLibrary.Application.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\MusicLibrary\\src\\Core\\MusicLibrary.Application\\MusicLibrary.Application.csproj"
               },
-              "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Core\\MusicLibrary.Domain\\MusicLibrary.Domain.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Core\\MusicLibrary.Domain\\MusicLibrary.Domain.csproj"
+              "C:\\Users\\user\\Desktop\\MusicLibrary\\src\\Core\\MusicLibrary.Domain\\MusicLibrary.Domain.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\MusicLibrary\\src\\Core\\MusicLibrary.Domain\\MusicLibrary.Domain.csproj"
               }
             }
           }

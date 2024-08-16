@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MusicLibrary.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7509721ecfaf5f3a73070259e3c4ff34173551e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb90af163a791101edd24ef8a57590777771af0f")]
 [assembly: System.Reflection.AssemblyProductAttribute("MusicLibrary.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MusicLibrary.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

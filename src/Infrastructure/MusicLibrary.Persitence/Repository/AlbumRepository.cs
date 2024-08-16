@@ -10,30 +10,47 @@ namespace MusicLibrary.Persitence.Repository
 {
     public class AlbumRepository : IAlbumRepository
     {
-        private readonly MusicLibraryContext _context; 
+        private readonly MusicLibraryContext _context;
         public void Add(Album album)
         {
-            throw new NotImplementedException();
+            _context.Albums.Add(album);
+            _context.SaveChanges();
         }
 
         public void Delete(int albumId)
         {
-            throw new NotImplementedException();
+            var album = _context.Albums.FirstOrDefault(u => u.AlbumId == albumId);
+            if (album != null)
+            {
+                _context.Albums.Remove(album);
+            }
+            _context.SaveChanges();
         }
 
         public IEnumerable<Album> GetAll()
         {
-            throw new NotImplementedException();
+            return _context.Albums;
         }
 
         public Album GetById(int albumId)
         {
-            throw new NotImplementedException();
+            return _context.Albums.FirstOrDefault(u => u.AlbumId == albumId)!;
         }
 
         public void Update(Album album)
         {
-            throw new NotImplementedException();
+            var existingAlbum = _context.Albums.FirstOrDefault(u => u.AlbumId == album.ArtistId);
+            if (existingAlbum != null)
+            {
+                existingAlbum.Title = album.Title;
+                existingAlbum.ReleaseDate= album.ReleaseDate;
+                existingAlbum.ArtistId = album.ArtistId;
+            }
+            else
+            {
+                throw new Exception("Album not found");
+            }
+            _context.SaveChanges();
         }
     }
 }

@@ -22,7 +22,6 @@ namespace MusicLibrary.Application.Services
         {
             var artist = new Artist
             {
-                //ArtistId = GenerateArtistId(),
                 FirstName = artistDto.FirstName,
                 LastName = artistDto.LastName,
                 Pseudonim = artistDto.Pseudonim,

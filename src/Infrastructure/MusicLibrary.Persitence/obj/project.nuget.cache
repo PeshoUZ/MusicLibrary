@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lqT1BYZrqbESch41xX+pIiTfuvr5oBtSa5XTFokr95DedxulfkV8oFKW99gOMuFBkT7xpIOFo+Qjtwny1twDZw==",
+  "dgSpecHash": "xQ0R31yBMVxfefr1zq1qtl0Q4gSv9Solgn3ps3n2assZ7lOwYuWR4/pvR8GK7XriF6Pi4SW9+wJM2OJofz9Q6A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\c#\\MusicLibrary\\src\\Infrastructure\\MusicLibrary.Persitence\\MusicLibrary.Persitence.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\MusicLibrary\\src\\Infrastructure\\MusicLibrary.Persitence\\MusicLibrary.Persitence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.8\\microsoft.entityframeworkcore.8.0.8.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.8\\microsoft.entityframeworkcore.abstractions.8.0.8.nupkg.sha512",

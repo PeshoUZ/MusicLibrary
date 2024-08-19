@@ -1,4 +1,5 @@
-﻿using MusicLibrary.Application.Interfaces;
+﻿using Microsoft.EntityFrameworkCore;
+using MusicLibrary.Application.Interfaces;
 using MusicLibrary.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -36,6 +37,11 @@ namespace MusicLibrary.Persitence.Repository
         public Artist GetById(int artistId)
         {
             return _context.Artists.FirstOrDefault(u => u.ArtistId == artistId)!;
+        }
+
+        public IEnumerable<TrackArtist> GetTracksByArtistId(int artistId)
+        {
+            return _context.TrackArtists.Where(u => u.ArtistId == artistId);
         }
 
         public void Update(Artist artist)

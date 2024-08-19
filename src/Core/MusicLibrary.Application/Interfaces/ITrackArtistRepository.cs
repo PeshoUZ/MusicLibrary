@@ -9,8 +9,6 @@ namespace MusicLibrary.Application.Interfaces
 {
     public interface ITrackArtistRepository
     {
-        TrackArtist GetByArtistId(int artistId);
-        TrackArtist GetByTrackId(int trackId);
         IEnumerable<TrackArtist> GetAll();
         void Add(TrackArtist trackArtist);
         void DeleteByArtistId(int artistId);

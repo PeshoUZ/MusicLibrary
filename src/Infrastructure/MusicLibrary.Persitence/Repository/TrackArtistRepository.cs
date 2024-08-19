@@ -42,15 +42,5 @@ namespace MusicLibrary.Persitence.Repository
         {
             return _context.TrackArtists;
         }
-
-        public TrackArtist GetByArtistId(int artistId)
-        {
-            return _context.TrackArtists.FirstOrDefault(u => u.ArtistId == artistId)!;
-        }
-
-        public TrackArtist GetByTrackId(int trackId)
-        {
-            return _context.TrackArtists.FirstOrDefault(u => u.TrackId == trackId)!;
-        }
     }
 }

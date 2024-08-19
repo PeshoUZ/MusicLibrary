@@ -33,6 +33,11 @@ namespace MusicLibrary.Persitence.Repository
             return _context.Tracks;
         }
 
+        public IEnumerable<TrackArtist> GetArtistsByTrackId(int trackId)
+        {
+            return _context.TrackArtists.Where(u => u.TrackId == trackId);
+        }
+
         public Track GetById(int trackId)
         {
             return _context.Tracks.FirstOrDefault(u => u.TrackId == trackId)!;

@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 
 namespace MusicLibrary.Application.Interfaces
 {
-    public interface IAlbumService
+    public interface ITrackService
     {
-        Album GetAlbum(int albumId);
-        IEnumerable<Album> GetAlbums();
-        void CreateAlbum(AlbumCreateDto album);
-        public void UpdateAlbum(Album album);
-        public void DeleteAlbum(int albumId);
+        Track GetTrack(int trackId);
+        IEnumerable<Track> GetTracks();
+        void CreateTrack(TrackCreateDto track);
+        public void UpdateTrack(Track track);
+        public void DeleteTrack(int trackId);
     }
 }

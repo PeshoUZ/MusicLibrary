@@ -11,10 +11,13 @@ namespace MusicLibrary.Application.Configuration
 {
     public static class ServiceConfiguration
     {
-        public static void RegisterServices(this IServiceCollection service)
+        public static IServiceCollection RegisterServices(this IServiceCollection service)
         {
             service.AddScoped<IArtistService, ArtistService>();
-            //services.AddScoped<IArtistRepository, IArtistRepository>();
+            service.AddScoped<IAlbumService, AlbumService>();
+            service.AddScoped<ITrackService, TrackService>();
+
+            return service;
         }
     }
 }

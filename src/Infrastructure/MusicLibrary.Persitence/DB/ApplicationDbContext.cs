@@ -18,7 +18,7 @@ namespace MusicLibrary.Persitence.DB
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=MusicLibraryDB;Integrated Security=true; Encrypt=False; TrustServerCertificate=True");
+                optionsBuilder.UseSqlServer("Data Source=DESKTOP-6MGEG06\\MSSQLSERVER02;Initial Catalog=MusicLibraryDB;Integrated Security=true; Encrypt=False; TrustServerCertificate=True");
             }
         }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
@@ -41,12 +41,14 @@ namespace MusicLibrary.Persitence.DB
             modelBuilder.Entity<TrackArtist>()
                 .HasOne(ta => ta.Track)
                 .WithMany(t => t.TrackArtists)
-                .HasForeignKey(ta => ta.TrackId);
+                .HasForeignKey(ta => ta.TrackId)
+                .OnDelete(DeleteBehavior.NoAction);
 
             modelBuilder.Entity<TrackArtist>()
                 .HasOne(ta => ta.Artist)
                 .WithMany(a => a.TrackArtists)
-                .HasForeignKey(ta => ta.ArtistId);
+                .HasForeignKey(ta => ta.ArtistId)
+                .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Album>()
                 .HasOne(a => a.Artist)

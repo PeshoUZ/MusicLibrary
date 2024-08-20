@@ -146,7 +146,7 @@ namespace MusicLibrary.Persitence.Migrations
                     b.HasOne("MusicLibrary.Domain.Entities.Track", "Track")
                         .WithMany("TrackArtists")
                         .HasForeignKey("TrackId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("Artist");

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace MusicLibrary.Persitence.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class test : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -90,8 +90,7 @@ namespace MusicLibrary.Persitence.Migrations
                         name: "FK_TrackArtists_Tracks_TrackId",
                         column: x => x.TrackId,
                         principalTable: "Tracks",
-                        principalColumn: "TrackId",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "TrackId");
                 });
 
             migrationBuilder.CreateIndex(

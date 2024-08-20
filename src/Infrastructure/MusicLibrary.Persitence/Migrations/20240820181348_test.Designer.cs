@@ -12,8 +12,8 @@ using MusicLibrary.Persitence.DB;
 namespace MusicLibrary.Persitence.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240820172241_Test")]
-    partial class Test
+    [Migration("20240820181348_test")]
+    partial class test
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -149,7 +149,7 @@ namespace MusicLibrary.Persitence.Migrations
                     b.HasOne("MusicLibrary.Domain.Entities.Track", "Track")
                         .WithMany("TrackArtists")
                         .HasForeignKey("TrackId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("Artist");

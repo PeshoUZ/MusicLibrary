@@ -19,13 +19,18 @@ namespace MusicLibrary.Application.Services
             {
                 Title = trackDto.Title,
                 Genre = trackDto.Genre,
-                DurationSeconds = trackDto.DurationSeconds
+                DurationSeconds = trackDto.Duration
             };
         }
 
         public void DeleteTrack(int trackId)
         {
             _trackRepository.Delete(trackId);
+        }
+
+        public IEnumerable<TrackArtist> GetArtists(int trackId)
+        {
+            return _trackRepository.GetArtistsByTrackId(trackId);
         }
 
         public Track GetTrack(int trackId)

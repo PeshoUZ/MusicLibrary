@@ -12,7 +12,7 @@ namespace MusicLibrary.Domain.Entities
         [Key]
         public int TrackId { get; set; }
         public string? Title { get; set; }
-        public int DurationSeconds { get; set; }
+        public TimeSpan DurationSeconds { get; set; }
         public int AlbumId { get; set; }
         public string? Genre { get; set; }
         public Album Album { get; set; }

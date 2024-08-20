@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "fHd6BC+xj+4RNlFUIBVRqqLllSova4fDzo3LJouiQNuRMP2+dP3oqVJZA+O8TP2qFRPS7jsRZothggCBTfzdLg==",
+  "dgSpecHash": "7Gbs5cZeqrKNDcOsByStyC4QI7pD2DLorFtBNsLrh/gWgKCnTbMpF29LWJb0LAIcWxb/Ui5pvm/G4+JynP99IA==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\Desktop\\MusicLibrary\\src\\Presentation\\MusicLibrary.API\\MusicLibrary.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

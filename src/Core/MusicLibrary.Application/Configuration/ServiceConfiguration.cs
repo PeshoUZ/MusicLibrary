@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MusicLibrary.Application.Services;
+using System.Reflection;
 
 namespace MusicLibrary.Application.Configuration
 {
@@ -16,6 +17,9 @@ namespace MusicLibrary.Application.Configuration
             service.AddScoped<IArtistService, ArtistService>();
             service.AddScoped<IAlbumService, AlbumService>();
             service.AddScoped<ITrackService, TrackService>();
+
+            var assembly = Assembly.GetExecutingAssembly();
+            service.AddAutoMapper(assembly);
 
             return service;
         }

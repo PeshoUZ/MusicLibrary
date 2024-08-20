@@ -10,10 +10,11 @@ namespace MusicLibrary.Application.Interfaces
 {
     public interface IArtistService
     {
-        Artist GetArtist(int artistId);
-        IEnumerable<Artist> GetArtists();
+        ArtistGetDto GetArtist(int artistId);
+        IEnumerable<ArtistTrackDto> GetTracks(int artistId);
+        IEnumerable<ArtistGetDto> GetArtists();
         void CreateArtist(ArtistCreateDto artist);
-        public void UpdateArtist(Artist artist);
+        public void UpdateArtist(int artistId, ArtistUpdateDto artistDto);
         public void DeleteArtist(int artistId);
     }
 }

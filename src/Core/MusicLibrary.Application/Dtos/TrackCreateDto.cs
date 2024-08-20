@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace MusicLibrary.Application.Dtos
 {
-    public class TrackCreateDto
+    public class TrackCreateDto : TrackBaseDto
     {
-        //public int TrackId { get; set; }
-        public string? Title { get; set; }
-        public int DurationSeconds { get; set; }
-        //public int AlbumId { get; set; }
-        public string? Genre { get; set; }
+        public int AlbumID { get; set; }
+        public List<int>? ArtistIDs { get; set; }
     }
 }

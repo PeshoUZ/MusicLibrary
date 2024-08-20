@@ -177,3 +177,4 @@ C:\Users\user\Desktop\MusicLibrary\src\Presentation\MusicLibrary.API\obj\Debug\n
 C:\Users\user\Desktop\MusicLibrary\src\Presentation\MusicLibrary.API\obj\Debug\net8.0\MusicLibrary.API.genruntimeconfig.cache
 C:\Users\user\Desktop\MusicLibrary\src\Presentation\MusicLibrary.API\obj\Debug\net8.0\ref\MusicLibrary.API.dll
 C:\Users\user\Desktop\MusicLibrary\src\Presentation\MusicLibrary.API\bin\Debug\net8.0\libman.json
+C:\Users\user\Desktop\MusicLibrary\src\Presentation\MusicLibrary.API\bin\Debug\net8.0\AutoMapper.dll

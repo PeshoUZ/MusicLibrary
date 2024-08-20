@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MusicLibrary.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb2d7fa30d055a9b36b46f609a09efa7f5696167")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca0d4174ce6bf1a622a276626a7fc09f983b890e")]
 [assembly: System.Reflection.AssemblyProductAttribute("MusicLibrary.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MusicLibrary.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

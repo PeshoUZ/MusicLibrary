@@ -1,5 +1,6 @@
 ﻿using MusicLibrary.Application.Interfaces;
 using MusicLibrary.Domain.Entities;
+using MusicLibrary.Persitence.DB;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ namespace MusicLibrary.Persitence.Repository
 {
     public class AlbumRepository : IAlbumRepository
     {
-        private readonly MusicLibraryContext _context;
+        private readonly ApplicationDbContext _context;
         public void Add(Album album)
         {
             _context.Albums.Add(album);

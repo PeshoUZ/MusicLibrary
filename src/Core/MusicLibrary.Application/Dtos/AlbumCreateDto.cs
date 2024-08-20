@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace MusicLibrary.Application.Dtos
 {
-    public class AlbumCreateDto
+    public class AlbumCreateDto : AlbumBaseDto
     {
-        //public int AlbumId { get; set; }
-        public string? Title { get; set; }
-        public DateOnly ReleaseDate { get; set; }
-        //public int ArtistId { get; set; }
+        public int ArtistId { get; set; }
     }
 }

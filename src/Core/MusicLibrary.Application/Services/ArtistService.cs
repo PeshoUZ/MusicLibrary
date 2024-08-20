@@ -1,4 +1,5 @@
-﻿using MusicLibrary.Application.Dtos;
+﻿using AutoMapper;
+using MusicLibrary.Application.Dtos;
 using MusicLibrary.Application.Interfaces;
 using MusicLibrary.Domain.Entities;
 using System;
@@ -12,21 +13,21 @@ namespace MusicLibrary.Application.Services
     public class ArtistService : IArtistService
     {
         private readonly IArtistRepository _artistRepository;
+        private readonly IMapper _mapper;
+        private readonly ITrackArtistRepository _trackRepository;
 
-        public ArtistService(IArtistRepository artistRepository)
+        public ArtistService(IArtistRepository artistRepository, ITrackArtistRepository trackRepository, IMapper mapper)
         {
-            _artistRepository = artistRepository;
+            _artistRepository = artistRepository; 
+            _trackRepository = trackRepository;
+            _mapper = mapper;
         }
 
         public void CreateArtist(ArtistCreateDto artistDto)
         {
-            var artist = new Artist
-            {
-                FirstName = artistDto.FirstName,
-                LastName = artistDto.LastName,
-                Pseudonim = artistDto.Pseudonim,
-                Country = artistDto.Country
-            };
+            Artist artist = new Artist();
+            artist = _mapper.Map<Artist>(artistDto);
+            _artistRepository.Add(artist);
         }
 
         public void DeleteArtist(int artistId)
@@ -34,21 +35,30 @@ namespace MusicLibrary.Application.Services
             _artistRepository.Delete(artistId);
         }
 
-        public Artist GetArtist(int artistId)
+        public ArtistGetDto GetArtist(int artistId)
         {
-            return _artistRepository.GetById(artistId);
-        }
-         
-        public IEnumerable<Artist> GetArtists()
-        {
-            return _artistRepository.GetAll();
+            Artist artist = _artistRepository.GetById(artistId);
+            var artistDto = _mapper.Map<ArtistGetDto>(artist);
+            return artistDto;
         }
 
-        public void UpdateArtist(Artist artist)
+        public IEnumerable<ArtistGetDto> GetArtists()
         {
+            var artists = _artistRepository.GetAll();
+            return _mapper.Map<IEnumerable<ArtistGetDto>>(artists);
+        }
+
+        public IEnumerable<ArtistTrackDto> GetTracks(int artistId)
+        {
+            IEnumerable<Track> tracks = _artistRepository.GetTracksByArtistId(artistId);
+            return _mapper.Map<IEnumerable<ArtistTrackDto>>(tracks);
+        }
+
+        public void UpdateArtist(int artistId, ArtistUpdateDto artistDto)
+        {
+            var artist = _artistRepository.GetById(artistId);
+            _mapper.Map(artistDto, artist);
             _artistRepository.Update(artist);
         }
-
-        //private int GenerateArtistId() => _artistRepository.GetAll().Count() + 1;
     }
 }

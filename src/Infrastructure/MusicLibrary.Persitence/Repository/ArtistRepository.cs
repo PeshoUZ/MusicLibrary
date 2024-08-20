@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MusicLibrary.Application.Interfaces;
 using MusicLibrary.Domain.Entities;
+using MusicLibrary.Persitence.DB;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace MusicLibrary.Persitence.Repository
 {
     public class ArtistRepository : IArtistRepository
     {
-        private readonly MusicLibraryContext _context;
+        private readonly ApplicationDbContext _context;
 
         public void Add(Artist artist)
         {
@@ -36,12 +37,16 @@ namespace MusicLibrary.Persitence.Repository
 
         public Artist GetById(int artistId)
         {
-            return _context.Artists.FirstOrDefault(u => u.ArtistId == artistId)!;
+            return _context.Artists
+                .Include(b => b.Albums)
+                .FirstOrDefault(u => u.ArtistId == artistId)!;
         }
 
-        public IEnumerable<TrackArtist> GetTracksByArtistId(int artistId)
+        public IEnumerable<Track> GetTracksByArtistId(int artistId)
         {
-            return _context.TrackArtists.Where(u => u.ArtistId == artistId);
+            return _context.Tracks
+                .Include(b => b.TrackArtists)
+                .Where(u => u.TrackArtists.Any(c => c.ArtistId == artistId));
         }
 
         public void Update(Artist artist)

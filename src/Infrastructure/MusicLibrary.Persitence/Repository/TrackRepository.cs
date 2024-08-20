@@ -13,6 +13,10 @@ namespace MusicLibrary.Persitence.Repository
     public class TrackRepository : ITrackRepository
     {
         private readonly ApplicationDbContext _context;
+        public TrackRepository(ApplicationDbContext context)
+        {
+            _context = context;
+        }
         public void Add(Track track)
         {
             _context.Tracks.Add(track);
@@ -31,7 +35,8 @@ namespace MusicLibrary.Persitence.Repository
 
         public IEnumerable<Track> GetAll()
         {
-            return _context.Tracks;
+            return _context.Tracks
+                .Include(b => b.Album);
         }
 
         public IEnumerable<Artist> GetArtistsByTrackId(int trackId)
@@ -44,6 +49,8 @@ namespace MusicLibrary.Persitence.Repository
         public Track GetById(int trackId)
         {
             return _context.Tracks
+                .Include(b => b.Album)
+                .Include(b => b.TrackArtists)
                 .FirstOrDefault(u => u.TrackId == trackId)!;
         }
 

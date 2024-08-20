@@ -29,19 +29,25 @@ namespace MusicLibrary.Application.Profiles
 
             CreateMap<Track, ArtistTrackDto>();
 
-            CreateMap<AlbumCreateDto, Album>();
-    
-            CreateMap<Album, AlbumGetDto>();
+            CreateMap<Album, AlbumCreateDto>().ReverseMap();
+            CreateMap<Album, AlbumUpdateDto>().ReverseMap();
+            CreateMap<Album, AlbumGetDto>()
+                .ForMember(dest => dest.ArtistName, opt => opt.MapFrom(src => $"{src.Artist.FirstName} {src.Artist.LastName}"))
+                .ForMember(dest => dest.Tracks, opt => opt.MapFrom(src => src.Tracks));
 
-            CreateMap<AlbumUpdateDto, Album>();
+            CreateMap<Track, TrackCreateDto>().ReverseMap();
+            CreateMap<Track, TrackUpdateDto>().ReverseMap();
+            CreateMap<Track, TrackGetDto>()
+                .ForMember(dest => dest.AlbumTitle, opt => opt.MapFrom(src => src.Album.Title))
+                .ForMember(dest => dest.Artists, opt => opt.MapFrom(src => src.TrackArtists.Select(ta => ta.Artist)));
 
-            CreateMap<TrackCreateDto, Track>();
+            CreateMap<TrackArtist, ArtistGetDto>()
+                .ForMember(dest => dest.ArtistId, opt => opt.MapFrom(src => src.ArtistId))
+                .ForMember(dest => dest.Name, opt => opt.MapFrom(src => $"{src.Artist.FirstName} {src.Artist.LastName}"));
 
-            CreateMap<Track, TrackGetDto>();
-
-            CreateMap<TrackUpdateDto, Track>();
-
-            CreateMap<Artist, TrackArtistDto>();
+            CreateMap<TrackArtist, TrackGetDto>()
+                .ForMember(dest => dest.TrackID, opt => opt.MapFrom(src => src.TrackId))
+                .ForMember(dest => dest.Title, opt => opt.MapFrom(src => src.Track.Title));
         }
     }
 }

@@ -14,6 +14,11 @@ namespace MusicLibrary.Persitence.Repository
     {
         private readonly ApplicationDbContext _context;
 
+        public ArtistRepository(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
         public void Add(Artist artist)
         {
             _context.Artists.Add(artist);

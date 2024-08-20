@@ -13,6 +13,11 @@ namespace MusicLibrary.Persitence.Repository
     public class AlbumRepository : IAlbumRepository
     {
         private readonly ApplicationDbContext _context;
+
+        public AlbumRepository(ApplicationDbContext context)
+        {
+            _context = context;
+        }
         public void Add(Album album)
         {
             _context.Albums.Add(album);
@@ -31,14 +36,20 @@ namespace MusicLibrary.Persitence.Repository
 
         public IEnumerable<Album> GetAll()
         {
-            return _context.Albums;
+            var albums = _context.Albums
+            .Include(a => a.Artist)
+            .Include(a => a.Tracks)
+            .ToList();
+            return albums;
         }
 
         public Album GetById(int albumId)
         {
             return _context.Albums
                 .Include(b => b.Tracks)
+                .Include(b =>b.Artist)
                 .FirstOrDefault(u => u.AlbumId == albumId)!;
+
         }
 
         public void Update(Album album)

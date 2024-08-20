@@ -1,4 +1,5 @@
-﻿using MusicLibrary.Application.Dtos;
+﻿using AutoMapper;
+using MusicLibrary.Application.Dtos;
 using MusicLibrary.Application.Interfaces;
 using MusicLibrary.Domain.Entities;
 using System;
@@ -13,14 +14,19 @@ namespace MusicLibrary.Application.Services
     public class TrackService : ITrackService
     {
         private readonly ITrackRepository _trackRepository;
+        private readonly IMapper _mapper;
+
+        public TrackService(ITrackRepository trackRepository, IMapper mapper)
+        {
+            _trackRepository = trackRepository;
+            _mapper = mapper;
+        }
+
         public void CreateTrack(TrackCreateDto trackDto)
         {
-            var track = new Track
-            {
-                Title = trackDto.Title,
-                Genre = trackDto.Genre,
-                DurationSeconds = trackDto.Duration
-            };
+            Track track = new Track();
+            track = _mapper.Map<Track>(trackDto);
+            _trackRepository.Add(track);
         }
 
         public void DeleteTrack(int trackId)
@@ -28,23 +34,28 @@ namespace MusicLibrary.Application.Services
             _trackRepository.Delete(trackId);
         }
 
-        public IEnumerable<TrackArtist> GetArtists(int trackId)
+        public IEnumerable<TrackArtistDto> GetArtists(int trackId)
         {
-            return _trackRepository.GetArtistsByTrackId(trackId);
+            IEnumerable<Artist> artists = _trackRepository.GetArtistsByTrackId(trackId);
+            return _mapper.Map<IEnumerable<TrackArtistDto>>(artists);
         }
 
-        public Track GetTrack(int trackId)
+        public TrackGetDto GetTrack(int trackId)
         {
-            return _trackRepository.GetById(trackId);
+            var track = _trackRepository.GetById(trackId);
+            return _mapper.Map<TrackGetDto>(track);
         }
 
-        public IEnumerable<Track> GetTracks()
+        public IEnumerable<TrackGetDto> GetTracks()
         {
-            return _trackRepository.GetAll();
+            var tracks = _trackRepository.GetAll();
+            return _mapper.Map<IEnumerable<TrackGetDto>>(tracks);
         }
 
-        public void UpdateTrack(Track track)
+        public void UpdateTrack(int trackId, TrackUpdateDto trackDto)
         {
+            var track = _trackRepository.GetById(trackId);
+            _mapper.Map(trackDto, track);
             _trackRepository.Update(track);
         }
     }

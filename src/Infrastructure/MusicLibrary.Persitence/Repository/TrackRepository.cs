@@ -34,14 +34,17 @@ namespace MusicLibrary.Persitence.Repository
             return _context.Tracks;
         }
 
-        public IEnumerable<TrackArtist> GetArtistsByTrackId(int trackId)
+        public IEnumerable<Artist> GetArtistsByTrackId(int trackId)
         {
-            return _context.TrackArtists.Where(u => u.TrackId == trackId);
+            return _context.Artists
+                .Include(b => b.TrackArtists)
+                .Where(u => u.TrackArtists.Any(c => c.TrackId == trackId));
         }
 
         public Track GetById(int trackId)
         {
-            return _context.Tracks.FirstOrDefault(u => u.TrackId == trackId)!;
+            return _context.Tracks
+                .FirstOrDefault(u => u.TrackId == trackId)!;
         }
 
         public void Update(Track track)

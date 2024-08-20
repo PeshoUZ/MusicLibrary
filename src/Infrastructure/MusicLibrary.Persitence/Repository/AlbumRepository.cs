@@ -1,4 +1,5 @@
-﻿using MusicLibrary.Application.Interfaces;
+﻿using Microsoft.EntityFrameworkCore;
+using MusicLibrary.Application.Interfaces;
 using MusicLibrary.Domain.Entities;
 using MusicLibrary.Persitence.DB;
 using System;
@@ -35,7 +36,9 @@ namespace MusicLibrary.Persitence.Repository
 
         public Album GetById(int albumId)
         {
-            return _context.Albums.FirstOrDefault(u => u.AlbumId == albumId)!;
+            return _context.Albums
+                .Include(b => b.Tracks)
+                .FirstOrDefault(u => u.AlbumId == albumId)!;
         }
 
         public void Update(Album album)

@@ -10,10 +10,10 @@ namespace MusicLibrary.Application.Interfaces
 {
     public interface IAlbumService
     {
-        Album GetAlbum(int albumId);
-        IEnumerable<Album> GetAlbums();
+        AlbumGetDto GetAlbum(int albumId);
+        IEnumerable<AlbumGetDto> GetAlbums();
         void CreateAlbum(AlbumCreateDto album);
-        public void UpdateAlbum(Album album);
+        public void UpdateAlbum(int albumId, AlbumUpdateDto albumDto);
         public void DeleteAlbum(int albumId);
     }
 }

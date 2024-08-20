@@ -15,7 +15,7 @@ namespace MusicLibrary.Domain.Entities
         public TimeSpan DurationSeconds { get; set; }
         public int AlbumId { get; set; }
         public string? Genre { get; set; }
-        public Album Album { get; set; }
+        public Album? Album { get; set; }
         public ICollection<TrackArtist> TrackArtists { get; set; } = new List<TrackArtist>();
     }
 }

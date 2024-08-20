@@ -10,7 +10,7 @@ namespace MusicLibrary.Application.Interfaces
     public interface ITrackRepository
     {
         Track GetById(int trackId);
-        IEnumerable<TrackArtist> GetArtistsByTrackId(int trackId);
+        IEnumerable<Artist> GetArtistsByTrackId(int trackId);
         IEnumerable<Track> GetAll();
         void Add(Track track);
         void Update(Track track);

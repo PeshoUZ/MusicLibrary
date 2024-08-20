@@ -10,7 +10,17 @@ namespace MusicLibrary.Persitence.DB
 {
     public class ApplicationDbContext : DbContext
     {
-        
+        public ApplicationDbContext()
+        {
+
+        }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=MusicLibraryDB;Integrated Security=true; Encrypt=False; TrustServerCertificate=True");
+            }
+        }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {

@@ -31,13 +31,15 @@ namespace MusicLibrary.Persitence.Repository
             if (artist != null)
             {
                 _context.Artists.Remove(artist);
+                
             }
             _context.SaveChanges();
         }
 
         public IEnumerable<Artist> GetAll()
         {
-            return _context.Artists;
+            return _context.Artists
+                .Include(b=> b.Albums);
         }
 
         public Artist GetById(int artistId)
@@ -51,6 +53,7 @@ namespace MusicLibrary.Persitence.Repository
         {
             return _context.Tracks
                 .Include(b => b.TrackArtists)
+                .ThenInclude(s => s.Track)
                 .Where(u => u.TrackArtists.Any(c => c.ArtistId == artistId));
         }
 

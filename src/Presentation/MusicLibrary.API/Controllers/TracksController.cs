@@ -21,6 +21,12 @@ namespace MusicLibrary.API.Controllers
         {
             return (IEnumerable<TrackGetDto>)_trackService.GetTracks();
         }
+        [HttpGet]
+        [Route("{genre}\\Tracks")]
+        public IEnumerable<TrackGetDto> GetByGenre(string genre)
+        {
+            return (IEnumerable<TrackGetDto>)_trackService.GetTracksByGenre(genre);
+        }
 
         [HttpGet]
         [Route("{id}")]

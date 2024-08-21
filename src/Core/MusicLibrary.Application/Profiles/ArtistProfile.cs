@@ -46,7 +46,7 @@ namespace MusicLibrary.Application.Profiles
                 .ForMember(dest => dest.Name, opt => opt.MapFrom(src => $"{src.Artist.FirstName} {src.Artist.LastName}"));
 
             CreateMap<TrackArtist, TrackGetDto>()
-                .ForMember(dest => dest.TrackID, opt => opt.MapFrom(src => src.TrackId))
+                .ForMember(dest => dest.TrackId, opt => opt.MapFrom(src => src.TrackId))
                 .ForMember(dest => dest.Title, opt => opt.MapFrom(src => src.Track.Title));
         }
     }

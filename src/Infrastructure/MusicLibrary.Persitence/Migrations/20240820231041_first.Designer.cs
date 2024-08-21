@@ -12,8 +12,8 @@ using MusicLibrary.Persitence.DB;
 namespace MusicLibrary.Persitence.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240820181348_test")]
-    partial class test
+    [Migration("20240820231041_first")]
+    partial class first
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -85,8 +85,8 @@ namespace MusicLibrary.Persitence.Migrations
                     b.Property<int>("AlbumId")
                         .HasColumnType("int");
 
-                    b.Property<TimeSpan>("DurationSeconds")
-                        .HasColumnType("time");
+                    b.Property<string>("Duration")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Genre")
                         .HasColumnType("nvarchar(max)");

@@ -8,7 +8,7 @@ namespace MusicLibrary.Application.Dtos
 {
     public class TrackGetDto : TrackBaseDto
     {
-        public int TrackID { get; set; }
+        public int TrackId { get; set; }
         public string? AlbumTitle { get; set; }
         public List<ArtistGetDto>? Artists { get; set; }
     }

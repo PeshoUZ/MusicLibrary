@@ -16,5 +16,6 @@ namespace MusicLibrary.Application.Interfaces
         void CreateTrack(TrackCreateDto track);
         public void UpdateTrack(int trackId, TrackUpdateDto trackDto);
         public void DeleteTrack(int trackId);
+        public IEnumerable<TrackGetDto> GetTracksByGenre(string Genre);
     }
 }

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace MusicLibrary.Persitence.Migrations
 {
     /// <inheritdoc />
-    public partial class test : Migration
+    public partial class first : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -55,7 +55,7 @@ namespace MusicLibrary.Persitence.Migrations
                     TrackId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    DurationSeconds = table.Column<TimeSpan>(type: "time", nullable: false),
+                    Duration = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     AlbumId = table.Column<int>(type: "int", nullable: false),
                     Genre = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },

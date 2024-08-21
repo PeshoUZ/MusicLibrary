@@ -54,12 +54,11 @@ namespace MusicLibrary.Persitence.Repository
 
         public void Update(Album album)
         {
-            var existingAlbum = _context.Albums.FirstOrDefault(u => u.AlbumId == album.ArtistId);
+            var existingAlbum = _context.Albums.FirstOrDefault(u => u.AlbumId == album.AlbumId);
             if (existingAlbum != null)
             {
                 existingAlbum.Title = album.Title;
                 existingAlbum.ReleaseDate= album.ReleaseDate;
-                existingAlbum.ArtistId = album.ArtistId;
             }
             else
             {

@@ -36,13 +36,15 @@ namespace MusicLibrary.Persitence.Repository
         public IEnumerable<Track> GetAll()
         {
             return _context.Tracks
-                .Include(b => b.Album);
+                .Include(b => b.Album)
+                .Include(b => b.TrackArtists);
         }
 
         public IEnumerable<Artist> GetArtistsByTrackId(int trackId)
         {
             return _context.Artists
                 .Include(b => b.TrackArtists)
+                .ThenInclude(s => s.Artist)
                 .Where(u => u.TrackArtists.Any(c => c.TrackId == trackId));
         }
 
@@ -54,13 +56,19 @@ namespace MusicLibrary.Persitence.Repository
                 .FirstOrDefault(u => u.TrackId == trackId)!;
         }
 
+        public IEnumerable<Track> GetTracksByTheirGenre(string Genre)
+        {
+            IEnumerable<Track> tracks = _context.Tracks.Where(t => t.Genre == Genre);
+            return tracks;
+        }
+
         public void Update(Track track)
         {
             var existingTrack = _context.Tracks.FirstOrDefault(u => u.TrackId == track.TrackId);
             if (existingTrack != null)
             {
                 existingTrack.Title = track.Title;
-                existingTrack.DurationSeconds = track.DurationSeconds;
+                existingTrack.Duration = track.Duration;
                 existingTrack.AlbumId = track.AlbumId;
             }
             else

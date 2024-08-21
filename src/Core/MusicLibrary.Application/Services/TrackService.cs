@@ -14,11 +14,13 @@ namespace MusicLibrary.Application.Services
     public class TrackService : ITrackService
     {
         private readonly ITrackRepository _trackRepository;
+        private readonly ITrackArtistRepository _trackArtistRepository;
         private readonly IMapper _mapper;
 
-        public TrackService(ITrackRepository trackRepository, IMapper mapper)
+        public TrackService(ITrackRepository trackRepository, ITrackArtistRepository trackArtistRepository, IMapper mapper)
         {
             _trackRepository = trackRepository;
+            _trackArtistRepository = trackArtistRepository;
             _mapper = mapper;
         }
 
@@ -27,6 +29,13 @@ namespace MusicLibrary.Application.Services
             Track track = new Track();
             track = _mapper.Map<Track>(trackDto);
             _trackRepository.Add(track);
+            foreach(int id in trackDto.ArtistIDs)
+            {
+                TrackArtist trackArtist = new TrackArtist();
+                trackArtist.ArtistId = id;
+                trackArtist.TrackId = track.TrackId;
+                _trackArtistRepository.Add(trackArtist);
+            }
         }
 
         public void DeleteTrack(int trackId)
@@ -49,6 +58,12 @@ namespace MusicLibrary.Application.Services
         public IEnumerable<TrackGetDto> GetTracks()
         {
             var tracks = _trackRepository.GetAll();
+            return _mapper.Map<IEnumerable<TrackGetDto>>(tracks);
+        }
+
+        public IEnumerable<TrackGetDto> GetTracksByGenre(string Genre)
+        {
+            var tracks = _trackRepository.GetTracksByTheirGenre(Genre);
             return _mapper.Map<IEnumerable<TrackGetDto>>(tracks);
         }
 

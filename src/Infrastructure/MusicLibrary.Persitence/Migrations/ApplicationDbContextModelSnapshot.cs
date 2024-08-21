@@ -82,8 +82,8 @@ namespace MusicLibrary.Persitence.Migrations
                     b.Property<int>("AlbumId")
                         .HasColumnType("int");
 
-                    b.Property<TimeSpan>("DurationSeconds")
-                        .HasColumnType("time");
+                    b.Property<string>("Duration")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Genre")
                         .HasColumnType("nvarchar(max)");

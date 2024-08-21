@@ -13,11 +13,13 @@ namespace MusicLibrary.Application.Services
     public class ArtistService : IArtistService
     {
         private readonly IArtistRepository _artistRepository;
+        private readonly ITrackArtistRepository _trackArtistRepository;
         private readonly IMapper _mapper;
 
-        public ArtistService(IArtistRepository artistRepository, IMapper mapper)
+        public ArtistService(IArtistRepository artistRepository, ITrackArtistRepository trackArtistReposiotry, IMapper mapper)
         {
             _artistRepository = artistRepository; 
+            _trackArtistRepository = trackArtistReposiotry;
             _mapper = mapper;
         }
 

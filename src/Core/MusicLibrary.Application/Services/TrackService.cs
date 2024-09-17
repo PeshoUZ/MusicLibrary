@@ -33,7 +33,7 @@ namespace MusicLibrary.Application.Services
             {
                 TrackArtist trackArtist = new TrackArtist();
                 trackArtist.ArtistId = id;
-                trackArtist.TrackId = track.TrackId;
+                trackArtist.TrackId = track.TrackId; 
                 _trackArtistRepository.Add(trackArtist);
             }
         }

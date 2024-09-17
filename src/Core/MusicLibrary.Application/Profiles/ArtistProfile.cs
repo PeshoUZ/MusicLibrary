@@ -33,7 +33,7 @@ namespace MusicLibrary.Application.Profiles
             CreateMap<Album, AlbumUpdateDto>().ReverseMap();
             CreateMap<Album, AlbumGetDto>()
                 .ForMember(dest => dest.ArtistName, opt => opt.MapFrom(src => $"{src.Artist.FirstName} {src.Artist.LastName}"))
-                .ForMember(dest => dest.Tracks, opt => opt.MapFrom(src => src.Tracks));
+                .ForMember(dest => dest.Tracks, opt =>opt.MapFrom(src => src.Tracks));
 
             CreateMap<Track, TrackCreateDto>().ReverseMap();
             CreateMap<Track, TrackUpdateDto>().ReverseMap();

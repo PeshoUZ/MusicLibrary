@@ -39,8 +39,8 @@ namespace MusicLibrary.Persitence.Repository
             var albums = _context.Albums
             .Include(a => a.Artist)
             .Include(a => a.Tracks)
-            .ThenInclude(a => a.TrackArtists)
-            .ThenInclude(a => a.Artist)
+            //.ThenInclude(a => a.TrackArtists)
+            //.ThenInclude(a => a.Artist)
             .ToList();
             return albums;
         }
